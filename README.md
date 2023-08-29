@@ -1,4 +1,4 @@
-# Dritas
+# Jogo de dados com modo multiplayer
 
 import tkinter as tk
 from tkinter import *
