@@ -11,7 +11,6 @@ import pandas as pd
 
 class Inicio: 
     def __init__(self, mestre):        
-        
         self.mestre = mestre
         self.mestre.title('Menu')
         self.mestre.geometry("290x290")
@@ -19,8 +18,7 @@ class Inicio:
         self.mestre.resizable(width=False, height=False)
         self.mestre.config(bg='#228b22')
         
-        # Construção da imagem de tela de fundo
-        
+        # Construção da imagem de tela de fundo 
         self.logo = Image.open(r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\logo_.png")  # Coloque o caminho da imagem do dado aqui
         self.logo = self.logo.resize((180, 180), Image.ANTIALIAS)
         self.logo = ImageTk.PhotoImage(self.logo)
