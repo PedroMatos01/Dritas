@@ -1,4 +1,4 @@
-# Jogo de dados com modo multiplayer
+# Jogo de dados multiplayer Python
 
 import tkinter as tk
 from tkinter import *
