@@ -14,12 +14,12 @@ class Inicio:
         self.mestre = mestre
         self.mestre.title('Menu')
         self.mestre.geometry("290x290")
-        self.mestre.iconphoto(False, PhotoImage(file=r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\dado.png"))
+        self.mestre.iconphoto(False, PhotoImage(dado.png"))
         self.mestre.resizable(width=False, height=False)
         self.mestre.config(bg='#228b22')
         
         # Construção da imagem de tela de fundo 
-        self.logo = Image.open(r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\logo_.png")  # Coloque o caminho da imagem do dado aqui
+        self.logo = Image.open(logo_.png")  # Coloque o caminho da imagem do dado aqui
         self.logo = self.logo.resize((180, 180), Image.ANTIALIAS)
         self.logo = ImageTk.PhotoImage(self.logo)
 
@@ -49,12 +49,12 @@ class Sorteio1:
         self.chefe = chefe
         self.chefe.title('Sorteio')
         self.chefe.geometry("290x290")
-        self.chefe.iconphoto(False, PhotoImage(file=r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\dado.png"))
+        self.chefe.iconphoto(False, PhotoImage(dado.png"))
         self.chefe.resizable(width=False, height=False)
         self.chefe.config(bg='#228b22')
 
         #Construção da imagem
-        self.icone = Image.open(r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\logo_.png")
+        self.icone = Image.open(logo_.png")
         self.icone = self.icone.resize((45, 40), Image.ANTIALIAS)
         self.icone = ImageTk.PhotoImage(self.icone)
 
@@ -105,14 +105,14 @@ class Sorteio2:
         self.dono = dono
         self.dono.title("Lançamento do Dado")
         self.dono.geometry("290x290")
-        self.dono.iconphoto(False, PhotoImage(file=r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\dado.png"))
+        self.dono.iconphoto(False, PhotoImage(file="dado.png"))
         self.dono.resizable(width=False, height=False)
         self.dono.config(bg='#228b22')
         self.df = df
         self.janela_mestre = janela_mestre
 
         #Construção da imagem
-        self.icone = Image.open(r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\logo_.png")
+        self.icone = Image.open(r"logo_.png")
         self.icone = self.icone.resize((45, 40), Image.ANTIALIAS)
         self.icone = ImageTk.PhotoImage(self.icone)
 
@@ -121,7 +121,7 @@ class Sorteio2:
         self.button3.pack(anchor='nw', padx=1, pady=1)
 
         #tratamento da imagem
-        self.imagem_dado = Image.open(r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\dado.png")  # Coloque o caminho da imagem do dado aqui
+        self.imagem_dado = Image.open("dado.png")  # Coloque o caminho da imagem do dado aqui
         self.imagem_dado = self.imagem_dado.resize((100, 100), Image.ANTIALIAS)
         self.imagem_dado = ImageTk.PhotoImage(self.imagem_dado)
 
@@ -180,7 +180,7 @@ class Sorteados:
          self.owner = owner
          self.owner.title = ('Resultados')
          self.owner.geometry("220x220")
-         self.owner.iconphoto(False, PhotoImage(file=r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\dado.png"))
+         self.owner.iconphoto(False, PhotoImage("dado.png"))
          self.owner.resizable(width=False, height=False)
          self.owner.config(bg='#228b22')
          self.df = df
@@ -217,16 +217,16 @@ class SimuladorDado:
         self.master = master
         self.master.title("Simulador de Dado")
         self.master.geometry("290x290")
-        self.master.iconphoto(False, PhotoImage(file=r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\dado.png"))
+        self.master.iconphoto(False, PhotoImage("dado.png"))
         self.master.resizable(width=False, height=False)
         self.master.config(bg='#228b22')
 
         #Construção da imagem
-        self.icone = Image.open(r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\logo_.png")
+        self.icone = Image.open("logo_.png")
         self.icone = self.icone.resize((45, 40), Image.ANTIALIAS)
         self.icone = ImageTk.PhotoImage(self.icone)
 
-        self.imagem_dado = Image.open(r"C:\Users\sotam\OneDrive\Desktop\Códigos\Cassino\dado.png")  # Coloque o caminho da imagem do dado aqui
+        self.imagem_dado = Image.open(f"dado.png")  # Coloque o caminho da imagem do dado aqui
         self.imagem_dado = self.imagem_dado.resize((100, 100), Image.ANTIALIAS)
         self.imagem_dado = ImageTk.PhotoImage(self.imagem_dado)
 
